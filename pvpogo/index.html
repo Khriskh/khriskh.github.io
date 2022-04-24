@@ -1,0 +1,235 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="files/bootstrap.min.css">
+    <link rel="stylesheet" href="files/all.min.css">
+    <link rel="stylesheet" href="files/css.css">
+
+    <title>Pokemon Go PvP IV Calculator!</title>
+  </head>
+  <body>
+    <div hidden>Pokemon Go PvP IV Calculator</div>
+    <div id="k-pkmn">
+      <input type="text" id="poke" list="poke-list" placeholder="Pokemon 1" value="" >
+      <input type="text" id="poke2" list="poke-list" placeholder="Pokemon 2" >
+      <input type="text" id="poke3" list="poke-list" placeholder="Pokemon 3" >
+      <input type="text" id="poke4" list="poke-list" placeholder="Pokemon 4" >
+      <datalist id="poke-list"></datalist>
+    </div>
+    <div id="k-atk">
+      Ataque <br>
+      <select id="att_iv">
+        <option value="0" selected>0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+      </select>
+    </div>
+    <div id="k-def">
+      Defensa <br>
+      <select id="def_iv">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15" selected>15</option>
+      </select>
+    </div>
+    <div id="k-sta">
+      HP <br>
+      <select id="sta_iv">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15" selected>15</option>
+      </select>
+    </div>
+    <div id="k-lvl">
+      Level <br>
+      <select id="max_lvl">
+        <option value="108">55</option>
+        <option value="106">54</option>
+        <option value="104">53</option>
+        <option value="102">52</option>
+        <option value="100">51</option>
+        <option value="98" selected>50</option>
+        <option value="96">49</option>
+        <option value="94">48</option>
+        <option value="92">47</option>
+        <option value="90">46</option>
+        <option value="88">45</option>
+        <option value="86">44</option>
+        <option value="84">43</option>
+        <option value="82">42</option>
+        <option value="80">41</option>
+        <option value="78">40</option>
+        <option value="76">39</option>
+        <option value="74">38</option>
+        <option value="72">37</option>
+        <option value="70">36</option>
+        <option value="68">35</option>
+        <option value="66">34</option>
+        <option value="64">33</option>
+        <option value="62">32</option>
+        <option value="60">31</option>
+        <option value="58">30</option>
+        <option value="56">29</option>
+        <option value="54">28</option>
+        <option value="52">27</option>
+        <option value="50">26</option>
+        <option value="48">25</option>
+        <option value="46">24</option>
+        <option value="44">23</option>
+        <option value="42">22</option>
+        <option value="40">21</option>
+        <option value="38">20</option>
+        <option value="36">19</option>
+        <option value="34">18</option>
+        <option value="32">17</option>
+        <option value="30">16</option>
+        <option value="28">15</option>
+        <option value="26">14</option>
+        <option value="24">13</option>
+        <option value="22">12</option>
+      </select>
+    </div>
+    <div id="k-iv">
+      Caught or Hatched <br>
+      <select id="min_iv">
+        <option value="0">0 Wild Catches</option>
+        <option value="1">1 Good Friends</option>
+        <option value="2">2 Great Friends / Purified</option>
+        <option value="3">3 Ultra Friends</option>
+        <option value="4">4 Weather Boosted</option>
+        <option value="5">5 Best Friends</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10 Raid / Egg</option>
+        <option value="11">11</option>
+        <option value="12">12 Lucky</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+      </select>
+    </div>
+
+    <!--
+    <div id="k-cap">
+      League <br>
+      <select id="cp_cap"> <br>
+        <option value="1500">Great League</option>
+        <option value="2500">Ultra League</option>
+        <option value="999999">Master Leauge</option>
+        <option value="500">Little Cup</option>
+      </select>
+    </div>
+    -->
+
+    <div id="k-calc">
+      <br>
+      <button type="button" id="calc" onclick="
+        $('#output').html(pvpivcalc(parseInt(500), pokeByName($('#poke').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+        $('#output2').html(pvpivcalc(parseInt(1500), pokeByName($('#poke').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+        $('#output3').html(pvpivcalc(parseInt(2500), pokeByName($('#poke').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+        $('#output4').html(pvpivcalc(parseInt(999999), pokeByName($('#poke').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+      ">P1</button>
+
+      <button type="button" id="calc2" onclick="
+        $('#output').html(pvpivcalc(parseInt(500), pokeByName($('#poke2').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+        $('#output2').html(pvpivcalc(parseInt(1500), pokeByName($('#poke2').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+        $('#output3').html(pvpivcalc(parseInt(2500), pokeByName($('#poke2').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+        $('#output4').html(pvpivcalc(parseInt(999999), pokeByName($('#poke2').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+      ">P2</button>
+
+      <button type="button" id="calc3" onclick="
+        $('#output').html(pvpivcalc(parseInt(500), pokeByName($('#poke3').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+        $('#output2').html(pvpivcalc(parseInt(1500), pokeByName($('#poke3').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+        $('#output3').html(pvpivcalc(parseInt(2500), pokeByName($('#poke3').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+        $('#output4').html(pvpivcalc(parseInt(999999), pokeByName($('#poke3').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+      ">P3</button>
+
+      <button type="button" id="calc4" onclick="
+        $('#output').html(pvpivcalc(parseInt(500), pokeByName($('#poke4').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+        $('#output2').html(pvpivcalc(parseInt(1500), pokeByName($('#poke4').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+        $('#output3').html(pvpivcalc(parseInt(2500), pokeByName($('#poke4').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+        $('#output4').html(pvpivcalc(parseInt(999999), pokeByName($('#poke4').val()), parseInt($('#min_iv').val()), parseInt($('#att_iv').val()), parseInt($('#def_iv').val()),parseInt($('#sta_iv').val()),parseInt($('#max_lvl').val()),$('#stat_prod'). prop('checked'),$('#stat_show').prop('checked')));
+      ">P4</button>
+    </div>
+    <div class="container">
+        <!--
+        <div class="row">
+          <div class="col-3" hidden>
+            <input type="checkbox" name="stat_prod" id="stat_prod" value="stat_prod">&nbsp;&nbsp;Prod
+          </div>
+          <div class="col-3" hidden>
+            <input type="checkbox" name="stat_show" id="stat_show" value="stat_show">&nbsp;&nbsp;Stats
+          </div>
+        </div>
+        -->
+    </div>
+    <div class="container" id="space">&nbsp;</div>
+    <div class="container" id="rows">
+      <div class="row"><div class="col-2">RANK</div><div class="col-1">ATK</div><div class="col-1">DEF</div><div class="col-1">HP</div><div class="col-2">LV</div><div class="col-2">CP</div><div class="col-2">%</div></div>
+    </div> <br>
+    <div class="container" id="output"></div> <br>
+    <div class="container" id="output2"></div> <br>
+    <div class="container" id="output3"></div> <br>
+    <div class="container" id="output4"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="files/jquery-3.2.1.slim.min.js"></script>
+    <script src="files/popper.min.js"></script>
+    <script src="files/bootstrap.min.js"></script>
+    <script src="files/pokedex.js"></script>
+    <script src="files/pvpivcalc.js"></script>
+
+
+    <script>
+      pokedex.forEach(poke => $('#poke-list').append("<option value=\""+poke["name"]+"\">"));
+    </script>
+  </body>
+</html>

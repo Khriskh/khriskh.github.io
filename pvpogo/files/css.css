@@ -1,0 +1,140 @@
+html
+{
+    background-color: #2B446E;
+    color: white;
+}
+body
+{
+    background-color: transparent;
+}
+
+#k-pkmn
+{
+    width: 100%;
+    float: left;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+#k-atk
+{
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+#k-def
+{
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+#k-sta
+{
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+#k-lvl
+{
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#k-iv
+{
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+#k-cap
+{
+    width: 38%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+#k-calc
+{
+    width: 50%;
+    float: left;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+#calc, #calc2, #calc3, #calc4
+{
+    background: rgb(18,19,25);
+    background: linear-gradient(360deg, rgba(18,19,25,1) 0%, rgba(55,57,74,1) 100%);
+    color: white;
+    border: 0px solid white;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 21.5%;
+    height: 42px;
+}
+
+#poke, #poke2, #poke3, #poke4
+{
+    height: 42px;
+    color: white;
+    float: left;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#calc:focus, #calc2:focus, #calc3:focus, #calc4:focus
+{
+    outline:0;
+}
+#k-pkmn, #k-atk, #k-def, #k-sta, #k-lvl, #k-iv, #k-cap, #k-calc
+{
+    color: white;
+}
+
+#att_iv, #def_iv, #sta_iv, #max_lvl, #min_iv, #cp_cap
+{
+    width: 100%;
+    height: 42px;
+}
+
+div
+{
+    color: white;
+}
+
+select
+{
+    height: 50px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+option
+{
+    background-color: #2B446E;
+}
